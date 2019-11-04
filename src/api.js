@@ -14,7 +14,7 @@ let createItem = function(name){
 };
 
 let updateItem = function(id, updateData) {
-  let updateDataString = JSON.stringify({updateData});
+  let updateDataString = JSON.stringify(updateData);
   //console.log(updateDataString);
   return fetch(`${BASE_URL}/items/${id}`,{
     method: 'PATCH',
